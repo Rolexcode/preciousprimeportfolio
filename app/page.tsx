@@ -1,135 +1,87 @@
 import Image from "next/image";
 
+const roles = [
+  { project: "ANTARCTIC WALLET", role: "Ambassador", scope: "Community / Advocacy" },
+  { project: "QUANTIO", role: "Ambassador", scope: "Content / Engagement" },
+  { project: "OZAK AI", role: "Ambassador", scope: "Awareness / Advocacy" },
+  { project: "CYFURCOIN", role: "Project Manager", scope: "Coordination / Growth" },
+];
+
+const services = [
+  ["01", "BUILD THE ROOM", "Community setup, culture, rituals and programming that give people a reason to return."],
+  ["02", "KEEP IT CLEAN", "Active moderation, scam defense, clear rules and calm conflict resolution."],
+  ["03", "MOVE THE CROWD", "Campaigns and conversation loops that turn passive reach into participation."],
+  ["04", "TELL THE STORY", "Web3-native content and project advocacy across X and Telegram."],
+];
+
 export default function Home() {
   return (
-    <main>
-      <nav className="site-nav" aria-label="Primary navigation">
-        <a className="wordmark focus-ring" href="#top" aria-label="PRIME home">
-          PRIME<span>.</span>
-        </a>
-        <div className="nav-links">
-          <a className="nav-link focus-ring" href="#services">Expertise</a>
-          <a className="nav-cta focus-ring" href="https://t.me/preciousprime07Tg" target="_blank" rel="noreferrer">
-            Let&apos;s talk <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-      </nav>
+    <main className="portfolio-v2" id="top">
+      <header className="masthead">
+        <a className="mast-logo focus-ring" href="#top" aria-label="Prime home">P/07</a>
+        <p>COMMUNITY SYSTEMS FOR<br />INTERNET-NATIVE TEAMS</p>
+        <p className="mast-status"><span aria-hidden="true" /> AVAILABLE FOR SELECT PROJECTS</p>
+        <a className="mast-contact focus-ring" href="https://t.me/preciousprime07Tg" target="_blank" rel="noreferrer">START A CHAT ↗</a>
+      </header>
 
-      <section className="hero" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow"><span aria-hidden="true" /> Web3 community operator</p>
-          <h1>Strong communities don&apos;t happen by chance.</h1>
-          <p className="hero-lede">
-            I&apos;m Prime — a community manager, moderator and content builder helping Web3 teams turn attention into active, lasting communities.
-          </p>
-          <div className="hero-actions">
-            <a className="primary-button focus-ring" href="https://t.me/preciousprime07Tg" target="_blank" rel="noreferrer">
-              Start a conversation <span aria-hidden="true">↗</span>
-            </a>
-            <a className="text-link focus-ring" href="https://x.com/preciousprime07" target="_blank" rel="noreferrer">
-              Follow on X <span aria-hidden="true">↗</span>
-            </a>
-          </div>
+      <section className="raw-hero" aria-labelledby="hero-title">
+        <div className="hero-index" aria-hidden="true">PRIME® — 2026</div>
+        <div className="hero-type">
+          <p className="raw-kicker">COMMUNITY MANAGER · MODERATOR · WEB3 OPERATOR</p>
+          <h1 id="hero-title"><span>PRIME</span><br />BUILDS<br /><em>THE ROOM.</em></h1>
+          <div className="hero-note"><span>↘</span><p>I turn scattered audiences into communities that talk, contribute and stay.</p></div>
         </div>
 
-        <div className="portrait-stage" aria-label="Portrait of Prime">
-          <div className="orbit orbit-one" aria-hidden="true" />
-          <div className="orbit orbit-two" aria-hidden="true" />
-          <div className="portrait-frame">
-            <Image
-              src="/prime-profile.jpg"
-              alt="Prime's black-and-white illustrated profile portrait"
-              width={640}
-              height={640}
-              priority
-            />
-          </div>
-          <div className="availability"><span aria-hidden="true" /> Available for the right project</div>
-          <div className="portrait-tag">CM · MOD · CONTENT</div>
+        <div className="hero-portrait">
+          <div className="portrait-label">IDENTITY / 001</div>
+          <Image src="/prime-profile.jpg" alt="Prime's monochrome illustrated profile portrait" width={640} height={640} priority />
+          <div className="portrait-stamp">MOD<br />CM<br />PM</div>
+          <div className="portrait-coords">ONLINE / WEB3<br />SIGNAL: STRONG</div>
+        </div>
+
+        <div className="hero-ledger">
+          <div><strong>2K+</strong><span>NETWORK</span></div>
+          <div><strong>9K</strong><span>POSTS</span></div>
+          <div><strong>3+</strong><span>AMBASSADORSHIPS</span></div>
+          <a className="hero-channel focus-ring" href="https://t.me/primeschambX" target="_blank" rel="noreferrer">ENTER PRIME&apos;S CHAMBER ↗</a>
         </div>
       </section>
 
-      <section className="signal-bar" id="services" aria-label="Prime's expertise">
-        <p>Community management</p><span aria-hidden="true">✦</span>
-        <p>Moderation</p><span aria-hidden="true">✦</span>
-        <p>Content strategy</p><span aria-hidden="true">✦</span>
-        <p>Web3 growth</p>
+      <section className="manifesto" aria-labelledby="manifesto-title">
+        <div className="manifesto-side">THE JOB / 001</div>
+        <div><p className="raw-kicker">A COMMUNITY IS NOT A FOLLOWER COUNT.</p><h2 id="manifesto-title">I DON&apos;T JUST<br />WATCH THE CHAT.<br /><span>I MOVE IT.</span></h2><p className="manifesto-copy">Good community work is part strategist, part host, part fire-fighter. It means knowing when to spark a conversation, when to listen, and when to protect the room.</p></div>
       </section>
 
-      <section className="impact-section section-shell" aria-labelledby="impact-title">
-        <div className="section-kicker">01 / Impact</div>
-        <div className="impact-intro">
-          <h2 id="impact-title">From audience<br />to belonging.</h2>
-          <div>
-            <p>I help founders create the rhythm, trust and daily energy that makes people want to stay.</p>
-            <a className="arrow-link focus-ring" href="https://t.me/primeschambX" target="_blank" rel="noreferrer">
-              Enter Prime&apos;s Chamber <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </div>
-        <div className="metrics-grid">
-          <article><strong>2K+</strong><span>X network</span><p>An active Web3 audience built through consistent conversation.</p></article>
-          <article><strong>9K</strong><span>Posts</span><p>Hands-on presence, project discovery and daily community touchpoints.</p></article>
-          <article><strong>3+</strong><span>Ambassador roles</span><p>Representing products with clarity, consistency and genuine advocacy.</p></article>
+      <section className="service-deck" id="services" aria-labelledby="service-title">
+        <div className="deck-header"><p>CAPABILITIES / 002</p><h2 id="service-title">WHAT I<br />HANDLE.</h2><p>STRATEGY IS CHEAP.<br />SHOWING UP IS THE WORK.</p></div>
+        <div className="raw-service-list">
+          {services.map(([number, title, copy]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{copy}</p><b aria-hidden="true">↗</b></article>)}
         </div>
       </section>
 
-      <section className="services-section section-shell" aria-labelledby="services-title">
-        <div className="section-kicker light">02 / What I do</div>
-        <div className="services-heading">
-          <h2 id="services-title">Community is<br />the product.</h2>
-          <p>Strategy is only useful when it shows up every day. I combine direction with hands-on execution.</p>
-        </div>
-        <div className="service-list">
-          <article><span>01</span><h3>Community management</h3><p>Culture, programming, feedback loops and daily operations that keep members active.</p></article>
-          <article><span>02</span><h3>Moderation & safety</h3><p>Clear rules, calm conflict resolution and fast response to spam, scams and disruption.</p></article>
-          <article><span>03</span><h3>Growth & engagement</h3><p>Campaigns, activations and conversations that turn reach into meaningful participation.</p></article>
-          <article><span>04</span><h3>Content & advocacy</h3><p>Native Web3 content, project storytelling and ambassador support across X and Telegram.</p></article>
+      <section className="work-ledger" aria-labelledby="work-title">
+        <div className="work-intro"><p>PROJECT LEDGER / 003</p><h2 id="work-title">TRUSTED<br />IN THE<br /><i>FIELD.</i></h2><p className="work-copy">From advocacy to project coordination, I work inside the conversation—not above it.</p></div>
+        <div className="role-table" role="list" aria-label="Selected Web3 roles">
+          <div className="role-head"><span>PROJECT</span><span>ROLE</span><span>SCOPE</span></div>
+          {roles.map((item, index) => <article key={item.project} role="listitem"><div><small>0{index + 1}</small><strong>{item.project}</strong></div><p>{item.role}</p><p>{item.scope}</p></article>)}
         </div>
       </section>
 
-      <section className="experience-section section-shell" aria-labelledby="experience-title">
-        <div className="section-kicker">03 / Selected experience</div>
-        <div className="experience-layout">
-          <div>
-            <h2 id="experience-title">In the room.<br />In the replies.<br />On the pulse.</h2>
-            <p className="experience-copy">I work where Web3 communities actually live — building momentum, listening closely and making sure no important conversation gets missed.</p>
-          </div>
-          <div className="role-list">
-            <article><div><span>Ambassador</span><h3>Antarctic Wallet</h3></div><p>Brand advocacy · Community</p></article>
-            <article><div><span>Ambassador</span><h3>Quantio</h3></div><p>Content · Engagement</p></article>
-            <article><div><span>Ambassador</span><h3>Ozak AI</h3></div><p>Awareness · Advocacy</p></article>
-            <article><div><span>Project Manager</span><h3>CyFurCoin</h3></div><p>Coordination · Growth</p></article>
-          </div>
+      <section className="receipts" aria-labelledby="receipts-title">
+        <div className="receipt-copy"><p>ON-CHAIN RECEIPTS / 004</p><h2 id="receipts-title">WORK.<br />DELIVER.<br /><span>GET PAID.</span></h2><p>Selected on-chain payment records from Prime&apos;s work archive. The work leaves a trail.</p></div>
+        <div className="receipt-stack">
+          <figure className="receipt-card receipt-a"><Image src="/receipt-usdc.jpg" alt="Selected USDC payment record" width={1280} height={700} /><figcaption>REC / USDC / 01</figcaption></figure>
+          <figure className="receipt-card receipt-b"><Image src="/receipt-sol.jpg" alt="Selected SOL payment record" width={1280} height={376} /><figcaption>REC / SOL / 02</figcaption></figure>
+          <figure className="receipt-card receipt-c"><Image src="/receipt-usdt.jpg" alt="Selected USDT payment records" width={1280} height={764} /><figcaption>REC / USDT / 03</figcaption></figure>
         </div>
       </section>
 
-      <section className="principles-section" aria-labelledby="principles-title">
-        <div className="section-shell principles-inner">
-          <div className="section-kicker light">04 / Operating principles</div>
-          <h2 id="principles-title">Visible. Reliable.<br />Human.</h2>
-          <div className="principles-grid">
-            <article><span>01</span><h3>Be present</h3><p>Community work happens in real time. Show up, listen and respond with context.</p></article>
-            <article><span>02</span><h3>Protect the room</h3><p>Trust grows when good members feel safe and bad actors are handled quickly.</p></article>
-            <article><span>03</span><h3>Make it matter</h3><p>Every campaign should give people a reason to contribute, not just another task.</p></article>
-          </div>
-        </div>
+      <section className="final-call" aria-labelledby="contact-title">
+        <p>YOUR COMMUNITY SHOULD FEEL ALIVE.</p><h2 id="contact-title">LET&apos;S MAKE<br />SOME <span>NOISE.</span></h2>
+        <div className="final-actions"><a className="block-button focus-ring" href="https://t.me/preciousprime07Tg" target="_blank" rel="noreferrer">MESSAGE PRIME ON TELEGRAM <span>↗</span></a><a className="block-button inverse focus-ring" href="https://x.com/preciousprime07" target="_blank" rel="noreferrer">FOLLOW @PRECIOUSPRIME07 <span>↗</span></a></div>
       </section>
 
-      <section className="contact-section section-shell" aria-labelledby="contact-title">
-        <p className="eyebrow"><span aria-hidden="true" /> Open to community roles & collaborations</p>
-        <h2 id="contact-title">Let&apos;s build a community people choose to stay in.</h2>
-        <div className="contact-actions">
-          <a className="primary-button large focus-ring" href="https://t.me/preciousprime07Tg" target="_blank" rel="noreferrer">Message me on Telegram <span aria-hidden="true">↗</span></a>
-          <a className="outline-button focus-ring" href="https://x.com/preciousprime07" target="_blank" rel="noreferrer">Connect on X <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
-
-      <footer className="site-footer">
-        <a className="wordmark focus-ring" href="#top">PRIME<span>.</span></a>
-        <p>Community manager · Moderator · Web3 operator</p>
-        <p>Built for the next conversation.</p>
-      </footer>
+      <footer className="raw-footer"><strong>PRIME®</strong><p>COMMUNITY MANAGER / MODERATOR / OPERATOR</p><a className="focus-ring" href="#top">BACK TO TOP ↑</a></footer>
     </main>
   );
 }
