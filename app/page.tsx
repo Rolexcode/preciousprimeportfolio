@@ -17,13 +17,22 @@ const services = [
   ["07", "WEB3 PROJECT SUPPORT", "Helping early-stage projects build strong foundations before and after launch."],
 ];
 
-const proof = [
+const featuredProof = [
   ["/proof-ambassador.jpg", "Ambassador appointment confirmed", "Ambassadorship / 01"],
   ["/proof-partner.jpg", "Web3 partnership confirmed", "Partnership / 02"],
   ["/proof-admin.jpg", "Community administrator appointment", "Community admin / 03"],
+];
+
+const moreProof = [
   ["/proof-pm.jpg", "Online project manager invitation", "Project management / 04"],
   ["/proof-administrator.jpg", "Administrator role invitation", "Operations / 05"],
   ["/proof-launch.jpg", "Launch administration and growth planning", "Launch support / 06"],
+];
+
+const payments = [
+  ["/receipt-usdc.jpg", "USDC payment receipt", "USDC / Payment 01"],
+  ["/receipt-sol.jpg", "SOL payment receipt", "SOL / Payment 02"],
+  ["/receipt-usdt.jpg", "USDT payment receipts", "USDT / Payment 03"],
 ];
 
 export default function Home() {
@@ -33,7 +42,7 @@ export default function Home() {
         <a className="mast-logo focus-ring" href="#top" aria-label="Prime home">P/07</a>
         <p>GROWTH SYSTEMS FOR<br />INTERNET-NATIVE TEAMS</p>
         <p className="mast-status"><span aria-hidden="true" /> AVAILABLE FOR SELECT PROJECTS</p>
-        <a className="mast-contact focus-ring" href="https://t.me/preciousprime07Tg" target="_blank" rel="noreferrer">START A CHAT ↗</a>
+        <a className="mast-contact focus-ring" href="https://t.me/preciousprime07" target="_blank" rel="noreferrer">START A CHAT ↗</a>
       </header>
 
       <section className="raw-hero" aria-labelledby="hero-title">
@@ -82,18 +91,42 @@ export default function Home() {
       <section className="proof-section" aria-labelledby="proof-title">
         <div className="proof-heading"><p>PROOF OF WORK / 004</p><h2 id="proof-title">THE WORK<br /><span>SPEAKS.</span></h2><p>Real conversations. Real appointments. Real trust earned across ambassador, community, operations and launch roles.</p></div>
         <div className="proof-grid">
-          {proof.map(([src, alt, caption], index) => (
+          {featuredProof.map(([src, alt, caption], index) => (
             <figure className={`proof-card proof-card-${index + 1}`} key={src}>
               <Image src={src} alt={alt} width={1280} height={900} />
               <figcaption><span>0{index + 1}</span>{caption}</figcaption>
             </figure>
           ))}
         </div>
+
+        <div className="payment-proof" aria-labelledby="payment-title">
+          <div className="payment-proof-heading"><p>PAYMENT PROOF / 005</p><h3 id="payment-title">PAID IN<br /><span>CRYPTO.</span></h3><p>Selected on-chain and stablecoin payment records from completed Web3 work.</p></div>
+          <div className="payment-grid">
+            {payments.map(([src, alt, caption], index) => (
+              <figure className="payment-card" key={src}>
+                <Image src={src} alt={alt} width={1280} height={720} />
+                <figcaption><span>0{index + 1}</span>{caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+
+        <details className="proof-more">
+          <summary className="proof-more-trigger focus-ring">SEE MORE PROOF <span aria-hidden="true">+</span></summary>
+          <div className="proof-grid proof-grid-more">
+            {moreProof.map(([src, alt, caption], index) => (
+              <figure className={`proof-card proof-card-${index + 4}`} key={src}>
+                <Image src={src} alt={alt} width={1280} height={900} />
+                <figcaption><span>0{index + 4}</span>{caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </details>
       </section>
 
       <section className="final-call" aria-labelledby="contact-title">
         <p>YOUR COMMUNITY SHOULD FEEL ALIVE.</p><h2 id="contact-title">LET&apos;S MAKE<br />SOME <span>NOISE.</span></h2>
-        <div className="final-actions"><a className="block-button focus-ring" href="https://t.me/preciousprime07Tg" target="_blank" rel="noreferrer">MESSAGE PRIME ON TELEGRAM <span>↗</span></a><a className="block-button inverse focus-ring" href="https://x.com/preciousprime07" target="_blank" rel="noreferrer">FOLLOW @PRECIOUSPRIME07 <span>↗</span></a></div>
+        <div className="final-actions"><a className="block-button focus-ring" href="https://t.me/preciousprime07" target="_blank" rel="noreferrer">MESSAGE PRIME ON TELEGRAM <span>↗</span></a><a className="block-button inverse focus-ring" href="https://x.com/preciousprime07" target="_blank" rel="noreferrer">FOLLOW @PRECIOUSPRIME07 <span>↗</span></a></div>
       </section>
 
       <footer className="raw-footer"><strong>PRIME®</strong><p>WEB3 GROWTH & COMMUNITY STRATEGIST</p><a className="focus-ring" href="#top">BACK TO TOP ↑</a></footer>
