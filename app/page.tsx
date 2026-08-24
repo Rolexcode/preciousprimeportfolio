@@ -8,10 +8,22 @@ const roles = [
 ];
 
 const services = [
-  ["01", "BUILD THE ROOM", "Community setup, culture, rituals and programming that give people a reason to return."],
-  ["02", "KEEP IT CLEAN", "Active moderation, scam defense, clear rules and calm conflict resolution."],
-  ["03", "MOVE THE CROWD", "Campaigns and conversation loops that turn passive reach into participation."],
-  ["04", "TELL THE STORY", "Web3-native content and project advocacy across X and Telegram."],
+  ["01", "COMMUNITY MANAGEMENT", "Building, managing and keeping Web3 communities active and engaged."],
+  ["02", "COMMUNITY MODERATION", "Maintaining a safe, organized and welcoming environment for every member."],
+  ["03", "GROWTH & MARKETING", "Practical growth strategies, organic outreach, campaigns, partnerships and community acquisition."],
+  ["04", "CONTENT & AMBASSADORSHIP", "Posts, threads, project content and engaging narratives that improve visibility."],
+  ["05", "SOCIAL MEDIA MANAGEMENT", "Managing X presence, strategic engagement, content coordination and audience growth."],
+  ["06", "STRATEGY & OPERATIONS", "Community systems, activities and engagement flows that help projects grow sustainably."],
+  ["07", "WEB3 PROJECT SUPPORT", "Helping early-stage projects build strong foundations before and after launch."],
+];
+
+const proof = [
+  ["/proof-ambassador.jpg", "Ambassador appointment confirmed", "Ambassadorship / 01"],
+  ["/proof-partner.jpg", "Web3 partnership confirmed", "Partnership / 02"],
+  ["/proof-admin.jpg", "Community administrator appointment", "Community admin / 03"],
+  ["/proof-pm.jpg", "Online project manager invitation", "Project management / 04"],
+  ["/proof-administrator.jpg", "Administrator role invitation", "Operations / 05"],
+  ["/proof-launch.jpg", "Launch administration and growth planning", "Launch support / 06"],
 ];
 
 export default function Home() {
@@ -19,7 +31,7 @@ export default function Home() {
     <main className="portfolio-v2" id="top">
       <header className="masthead">
         <a className="mast-logo focus-ring" href="#top" aria-label="Prime home">P/07</a>
-        <p>COMMUNITY SYSTEMS FOR<br />INTERNET-NATIVE TEAMS</p>
+        <p>GROWTH SYSTEMS FOR<br />INTERNET-NATIVE TEAMS</p>
         <p className="mast-status"><span aria-hidden="true" /> AVAILABLE FOR SELECT PROJECTS</p>
         <a className="mast-contact focus-ring" href="https://t.me/preciousprime07Tg" target="_blank" rel="noreferrer">START A CHAT ↗</a>
       </header>
@@ -27,15 +39,15 @@ export default function Home() {
       <section className="raw-hero" aria-labelledby="hero-title">
         <div className="hero-index" aria-hidden="true">PRIME® — 2026</div>
         <div className="hero-type">
-          <p className="raw-kicker">COMMUNITY MANAGER · MODERATOR · WEB3 OPERATOR</p>
-          <h1 id="hero-title"><span>PRIME</span><br />BUILDS<br /><em>THE ROOM.</em></h1>
-          <div className="hero-note"><span>↘</span><p>I turn scattered audiences into communities that talk, contribute and stay.</p></div>
+          <p className="raw-kicker">PRIME / STRATEGY · GROWTH · COMMUNITY</p>
+          <h1 id="hero-title"><span>WEB3 GROWTH</span><br />& COMMUNITY<br /><em>STRATEGIST.</em></h1>
+          <div className="hero-note"><span>↘</span><p>I help early-stage Web3 projects build visibility, community systems and momentum before and after launch.</p></div>
         </div>
 
         <div className="hero-portrait">
           <div className="portrait-label">IDENTITY / 001</div>
           <Image src="/prime-profile.jpg" alt="Prime's monochrome illustrated profile portrait" width={640} height={640} priority />
-          <div className="portrait-stamp">MOD<br />CM<br />PM</div>
+          <div className="portrait-stamp">GROW<br />BUILD<br />LEAD</div>
           <div className="portrait-coords">ONLINE / WEB3<br />SIGNAL: STRONG</div>
         </div>
 
@@ -53,7 +65,7 @@ export default function Home() {
       </section>
 
       <section className="service-deck" id="services" aria-labelledby="service-title">
-        <div className="deck-header"><p>CAPABILITIES / 002</p><h2 id="service-title">WHAT I<br />HANDLE.</h2><p>STRATEGY IS CHEAP.<br />SHOWING UP IS THE WORK.</p></div>
+        <div className="deck-header"><p>CAPABILITIES / 002</p><h2 id="service-title">WHAT<br />I DO.</h2><p>FROM FIRST COMMUNITY SETUP<br />TO POST-LAUNCH GROWTH.</p></div>
         <div className="raw-service-list">
           {services.map(([number, title, copy]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{copy}</p><b aria-hidden="true">↗</b></article>)}
         </div>
@@ -67,12 +79,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="receipts" aria-labelledby="receipts-title">
-        <div className="receipt-copy"><p>ON-CHAIN RECEIPTS / 004</p><h2 id="receipts-title">WORK.<br />DELIVER.<br /><span>GET PAID.</span></h2><p>Selected on-chain payment records from Prime&apos;s work archive. The work leaves a trail.</p></div>
-        <div className="receipt-stack">
-          <figure className="receipt-card receipt-a"><Image src="/receipt-usdc.jpg" alt="Selected USDC payment record" width={1280} height={700} /><figcaption>REC / USDC / 01</figcaption></figure>
-          <figure className="receipt-card receipt-b"><Image src="/receipt-sol.jpg" alt="Selected SOL payment record" width={1280} height={376} /><figcaption>REC / SOL / 02</figcaption></figure>
-          <figure className="receipt-card receipt-c"><Image src="/receipt-usdt.jpg" alt="Selected USDT payment records" width={1280} height={764} /><figcaption>REC / USDT / 03</figcaption></figure>
+      <section className="proof-section" aria-labelledby="proof-title">
+        <div className="proof-heading"><p>PROOF OF WORK / 004</p><h2 id="proof-title">THE WORK<br /><span>SPEAKS.</span></h2><p>Real conversations. Real appointments. Real trust earned across ambassador, community, operations and launch roles.</p></div>
+        <div className="proof-grid">
+          {proof.map(([src, alt, caption], index) => (
+            <figure className={`proof-card proof-card-${index + 1}`} key={src}>
+              <Image src={src} alt={alt} width={1280} height={900} />
+              <figcaption><span>0{index + 1}</span>{caption}</figcaption>
+            </figure>
+          ))}
         </div>
       </section>
 
@@ -81,7 +96,7 @@ export default function Home() {
         <div className="final-actions"><a className="block-button focus-ring" href="https://t.me/preciousprime07Tg" target="_blank" rel="noreferrer">MESSAGE PRIME ON TELEGRAM <span>↗</span></a><a className="block-button inverse focus-ring" href="https://x.com/preciousprime07" target="_blank" rel="noreferrer">FOLLOW @PRECIOUSPRIME07 <span>↗</span></a></div>
       </section>
 
-      <footer className="raw-footer"><strong>PRIME®</strong><p>COMMUNITY MANAGER / MODERATOR / OPERATOR</p><a className="focus-ring" href="#top">BACK TO TOP ↑</a></footer>
+      <footer className="raw-footer"><strong>PRIME®</strong><p>WEB3 GROWTH & COMMUNITY STRATEGIST</p><a className="focus-ring" href="#top">BACK TO TOP ↑</a></footer>
     </main>
   );
 }
