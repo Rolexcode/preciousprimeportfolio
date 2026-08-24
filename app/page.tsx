@@ -112,7 +112,7 @@ export default function Home() {
         </div>
 
         <details className="proof-more">
-          <summary className="proof-more-trigger focus-ring">SEE MORE PROOF <span aria-hidden="true">+</span></summary>
+          <summary className="proof-more-trigger focus-ring">SEE DEV REVIEWS <span aria-hidden="true">+</span></summary>
           <div className="proof-grid proof-grid-more">
             {moreProof.map(([src, alt, caption], index) => (
               <figure className={`proof-card proof-card-${index + 4}`} key={src}>

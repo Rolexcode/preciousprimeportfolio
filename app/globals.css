@@ -107,7 +107,7 @@ a { color: inherit; text-decoration: none; }
 .payment-proof-heading > p:last-child { max-width: 430px; color: var(--paper-2); font-size: 16px; font-weight: 700; line-height: 1.45; }
 .payment-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .payment-card { min-width: 0; margin: 0; padding: 8px 8px 0; border: 1px solid #5c5264; background: #17131b; }
-.payment-card img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center; background: #09090d; }
+.payment-card img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; object-position: center; background: #09090d; }
 .payment-card figcaption { min-height: 52px; padding: 12px 4px; display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid #5c5264; font-family: Consolas, monospace; font-size: 10px; letter-spacing: .04em; text-transform: uppercase; }
 .payment-card figcaption span { color: var(--blue); }
 .proof-more { margin-top: 46px; }
