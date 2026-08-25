@@ -64,7 +64,7 @@ export default function Home() {
           <div><strong>2K+</strong><span>NETWORK</span></div>
           <div><strong>9K</strong><span>POSTS</span></div>
           <div><strong>3+</strong><span>AMBASSADORSHIPS</span></div>
-          <a className="hero-channel focus-ring" href="https://t.me/primeschambX" target="_blank" rel="noreferrer">ENTER PRIME&apos;S CHAMBER ↗</a>
+          <a className="hero-channel focus-ring" href="https://t.me/primeschamb" target="_blank" rel="noreferrer">ENTER PRIME&apos;S CHAMBER ↗</a>
         </div>
       </section>
 
