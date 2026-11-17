@@ -124,7 +124,7 @@ a { color: inherit; text-decoration: none; }
 .rate-card-heading h3 span { color: var(--blue); }
 .rate-card-heading > p:last-child { max-width: 430px; color: var(--paper-2); font-size: 16px; font-weight: 700; line-height: 1.45; }
 .rate-card-inline { max-width: 700px; margin: 24px auto 0; }
-.rate-card-inline .proof-card img { max-height: none; }
+.rate-card-inline .proof-card img { max-height: none; filter: hue-rotate(55deg) saturate(1.15); }
 .rate-card-contact { min-height: 56px; margin-top: 16px; padding: 0 20px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--paper); background: var(--paper); color: var(--ink); font-family: Consolas, monospace; font-size: 11px; font-weight: 900; letter-spacing: .05em; }
 
 .final-call { padding: clamp(100px, 12vw, 170px) clamp(24px, 6vw, 88px) 0; background: var(--ink); color: var(--paper); text-align: center; }
