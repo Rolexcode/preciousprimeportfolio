@@ -1,20 +1,35 @@
 import Image from "next/image";
 
 const roles = [
+  { project: "CYFURCOIN", role: "Community Management", scope: "Growth / Engagement" },
+  { project: "RALLY25", role: "Community Manager", scope: "Onboarding / Support" },
   { project: "ANTARCTIC WALLET", role: "Ambassador", scope: "Community / Advocacy" },
   { project: "QUANTIO", role: "Ambassador", scope: "Content / Engagement" },
-  { project: "OZAK AI", role: "Ambassador", scope: "Awareness / Advocacy" },
-  { project: "CYFURCOIN", role: "Project Manager", scope: "Coordination / Growth" },
 ];
 
 const services = [
-  ["01", "COMMUNITY MANAGEMENT", "Building, managing and keeping Web3 communities active and engaged."],
-  ["02", "COMMUNITY MODERATION", "Maintaining a safe, organized and welcoming environment for every member."],
-  ["03", "GROWTH & MARKETING", "Practical growth strategies, organic outreach, campaigns, partnerships and community acquisition."],
-  ["04", "CONTENT & AMBASSADORSHIP", "Posts, threads, project content and engaging narratives that improve visibility."],
-  ["05", "SOCIAL MEDIA MANAGEMENT", "Managing X presence, strategic engagement, content coordination and audience growth."],
-  ["06", "STRATEGY & OPERATIONS", "Community systems, activities and engagement flows that help projects grow sustainably."],
-  ["07", "WEB3 PROJECT SUPPORT", "Helping early-stage projects build strong foundations before and after launch."],
+  ["01", "COMMUNITY MANAGEMENT & MODERATION", "Building a safe, welcoming, active space while keeping day-to-day conversations organised."],
+  ["02", "COMMUNITY BUILDING & GROWTH", "Creating onboarding, retention and participation systems that make a community worth joining."],
+  ["03", "WEB3 CONTENT & STRATEGY", "Writing posts, threads, updates and educational content that communicates a project’s value."],
+  ["04", "SOCIAL MEDIA MANAGEMENT", "Coordinating an active social presence, strategic engagement and consistent project communication."],
+  ["05", "GROWTH CAMPAIGNS & ENGAGEMENT", "Planning contests, quizzes, game nights and campaigns that turn attention into participation."],
+  ["06", "COMMUNITY ACTIVITIES & COORDINATION", "Keeping activities, announcements and feedback loops moving across the community."],
+  ["07", "AMBASSADOR & VISUAL SUPPORT", "Supporting project advocacy, promotion and simple visual content that improves visibility."],
+];
+
+const featuredProjects = [
+  {
+    number: "01",
+    project: "CYFURCOIN",
+    role: "COMMUNITY MANAGEMENT & GROWTH",
+    copy: "Supporting the Telegram community with engagement campaigns, contests, announcements, educational content and day-to-day moderation that keeps the room active, organised and welcoming.",
+  },
+  {
+    number: "02",
+    project: "RALLY25",
+    role: "COMMUNITY MANAGER",
+    copy: "Helping build the official Telegram community from an early group of 8 members to 100+ through onboarding, daily support, clear updates and consistent member engagement.",
+  },
 ];
 
 const featuredProof = [
@@ -48,9 +63,9 @@ export default function Home() {
       <section className="raw-hero" aria-labelledby="hero-title">
         <div className="hero-index" aria-hidden="true">PRIME® — 2026</div>
         <div className="hero-type">
-          <p className="raw-kicker">PRIME / STRATEGY · GROWTH · COMMUNITY</p>
+          <p className="raw-kicker">PRIME / COMMUNITY · CONTENT · GROWTH</p>
           <h1 id="hero-title"><span>WEB3 GROWTH</span><br />& COMMUNITY<br /><em>STRATEGIST.</em></h1>
-          <div className="hero-note"><span>↘</span><p>I help early-stage Web3 projects build visibility, community systems and momentum before and after launch.</p></div>
+          <div className="hero-note"><span>↘</span><p>I help early-stage Web3 projects build visibility, stronger communities and momentum before and after launch.</p></div>
         </div>
 
         <div className="hero-portrait">
@@ -70,7 +85,7 @@ export default function Home() {
 
       <section className="manifesto" aria-labelledby="manifesto-title">
         <div className="manifesto-side">THE JOB / 001</div>
-        <div><p className="raw-kicker">A COMMUNITY IS NOT A FOLLOWER COUNT.</p><h2 id="manifesto-title">I DON&apos;T JUST<br />WATCH THE CHAT.<br /><span>I MOVE IT.</span></h2><p className="manifesto-copy">Good community work is part strategist, part host, part fire-fighter. It means knowing when to spark a conversation, when to listen, and when to protect the room.</p></div>
+        <div><p className="raw-kicker">ABOUT PRIME / COMMUNITY-FIRST WEB3 WORK.</p><h2 id="manifesto-title">LEARN.<br />CREATE.<br /><span>BUILD.</span></h2><p className="manifesto-copy">I&apos;m Precious Afolayan, known as PRIME—a Web3 community builder and content professional. I help projects communicate their value, build trust and create places where members can learn, participate and stay.</p></div>
       </section>
 
       <section className="service-deck" id="services" aria-labelledby="service-title">
@@ -88,8 +103,19 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="project-stories" aria-labelledby="projects-title">
+        <div className="project-stories-heading"><p>FEATURED PROJECTS / 004</p><h2 id="projects-title">BUILT<br />WITH THE<br /><span>COMMUNITY.</span></h2><p>Two communities where PRIME has contributed directly to conversation, support and growth.</p></div>
+        <div className="project-story-grid">
+          {featuredProjects.map((item) => (
+            <article className="project-story" key={item.project}>
+              <span>{item.number}</span><p>{item.role}</p><h3>{item.project}</h3><p>{item.copy}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="proof-section" aria-labelledby="proof-title">
-        <div className="proof-heading"><p>PROOF OF WORK / 004</p><h2 id="proof-title">THE WORK<br /><span>SPEAKS.</span></h2><p>Real conversations. Real appointments. Real trust earned across ambassador, community, operations and launch roles.</p></div>
+        <div className="proof-heading"><p>PROOF OF WORK / 005</p><h2 id="proof-title">THE WORK<br /><span>SPEAKS.</span></h2><p>Real conversations. Real appointments. Real trust earned across ambassador, community, operations and launch roles.</p></div>
         <div className="proof-grid">
           {featuredProof.map(([src, alt, caption], index) => (
             <figure className={`proof-card proof-card-${index + 1}`} key={src}>
@@ -100,7 +126,7 @@ export default function Home() {
         </div>
 
         <div className="payment-proof" aria-labelledby="payment-title">
-          <div className="payment-proof-heading"><p>PAYMENT PROOF / 005</p><h3 id="payment-title">PAID IN<br /><span>CRYPTO.</span></h3><p>Selected on-chain and stablecoin payment records from completed Web3 work.</p></div>
+          <div className="payment-proof-heading"><p>PAYMENT PROOF / 006</p><h3 id="payment-title">PAID IN<br /><span>CRYPTO.</span></h3><p>Selected on-chain and stablecoin payment records from completed Web3 work.</p></div>
           <div className="payment-grid">
             {payments.map(([src, alt, caption], index) => (
               <figure className="payment-card" key={src}>
@@ -112,7 +138,7 @@ export default function Home() {
         </div>
 
         <details className="proof-more">
-          <summary className="proof-more-trigger focus-ring">SEE DEV REVIEWS <span aria-hidden="true">+</span></summary>
+          <summary className="proof-more-trigger focus-ring">SEE MORE WORK PROOF <span aria-hidden="true">+</span></summary>
           <div className="proof-grid proof-grid-more">
             {moreProof.map(([src, alt, caption], index) => (
               <figure className={`proof-card proof-card-${index + 4}`} key={src}>
@@ -124,8 +150,17 @@ export default function Home() {
         </details>
       </section>
 
+      <section className="rate-guide" aria-labelledby="rate-title">
+        <div className="rate-guide-heading"><p>SERVICE GUIDE / 007</p><h2 id="rate-title">IMPRESSED BY<br />THE WORK?<br /><span>SEE THE RATES.</span></h2><p>Clear packages for content, community management and growth support. Custom scopes are available for the right project.</p></div>
+        <figure className="rate-card-frame">
+          <Image src="/prime-web3-rate-card.png" alt="Prime Web3 rate card showing content writing, community management and growth strategy packages" width={1024} height={1536} />
+          <figcaption>PRIME WEB3 RATE CARD / PACKAGES & CUSTOM SCOPES</figcaption>
+        </figure>
+        <div className="rate-actions"><a className="rate-action focus-ring" href="https://t.me/preciousprime07" target="_blank" rel="noreferrer">ASK ABOUT A PACKAGE <span>↗</span></a><a className="rate-action rate-action-alt focus-ring" href="mailto:preciousafolayan6@gmail.com">EMAIL PRIME <span>↗</span></a></div>
+      </section>
+
       <section className="final-call" aria-labelledby="contact-title">
-        <p>YOUR COMMUNITY SHOULD FEEL ALIVE.</p><h2 id="contact-title">LET&apos;S MAKE<br />SOME <span>NOISE.</span></h2>
+        <p>YOUR COMMUNITY SHOULD FEEL ALIVE.</p><h2 id="contact-title">LET&apos;S MAKE<br />SOME <span>NOISE.</span></h2><a className="contact-email focus-ring" href="mailto:preciousafolayan6@gmail.com">preciousafolayan6@gmail.com</a>
         <div className="final-actions"><a className="block-button focus-ring" href="https://t.me/preciousprime07" target="_blank" rel="noreferrer">MESSAGE PRIME ON TELEGRAM <span>↗</span></a><a className="block-button inverse focus-ring" href="https://x.com/preciousprime07" target="_blank" rel="noreferrer">FOLLOW @PRECIOUSPRIME07 <span>↗</span></a></div>
       </section>
 
