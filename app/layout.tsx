@@ -2,23 +2,23 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PRIME — Web3 Growth & Community Strategist",
-  description: "Growth strategy, community systems, content and launch support for early-stage Web3 projects.",
+  title: "Precious Afolayan (PRIME) — Web3 Community & Growth",
+  description: "Precious Afolayan, known as PRIME, helps Web3 projects build stronger communities through thoughtful communication, useful content and consistent engagement.",
   openGraph: {
-    title: "PRIME — Web3 Growth & Community Strategist",
-    description: "Growth strategy, community systems, content and launch support for early-stage Web3 projects.",
+    title: "Precious Afolayan (PRIME) — Web3 Community & Growth",
+    description: "Web3 community building, content strategy and growth support by Precious Afolayan.",
     type: "website",
     images: [{
       url: "https://raw.githubusercontent.com/Rolexcode/preciousprimeportfolio/main/public/og.png",
       width: 1200,
       height: 630,
-      alt: "PRIME — Web3 Growth & Community Strategist",
+      alt: "PRIME — Web3 Community & Growth",
     }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "PRIME — Web3 Growth & Community Strategist",
-    description: "Growth strategy, community systems, content and launch support for early-stage Web3 projects.",
+    title: "Precious Afolayan (PRIME) — Web3 Community & Growth",
+    description: "Web3 community building, content strategy and growth support by Precious Afolayan.",
     images: ["https://raw.githubusercontent.com/Rolexcode/preciousprimeportfolio/main/public/og.png"],
   },
 };
