@@ -70,7 +70,7 @@ export default function Home() {
 
       <section className="manifesto" aria-labelledby="manifesto-title">
         <div className="manifesto-side">THE JOB / 001</div>
-        <div><p className="raw-kicker">A COMMUNITY IS NOT A FOLLOWER COUNT.</p><h2 id="manifesto-title">I DON&apos;T JUST<br />WATCH THE CHAT.<br /><span>I MOVE IT.</span></h2><p className="manifesto-copy">Good community work is part strategist, part host, part fire-fighter. It means knowing when to spark a conversation, when to listen, and when to protect the room.</p></div>
+        <div><p className="raw-kicker">A COMMUNITY IS NOT A FOLLOWER COUNT.</p><h2 id="manifesto-title">I DON&apos;T JUST<br />WATCH THE CHAT.<br /><span>I MOVE IT.</span></h2><p className="manifesto-copy">I&apos;m Precious Afolayan, known as PRIME—a Web3 community builder and content professional. Good community work is part strategist, part host and part fire-fighter: knowing when to spark a conversation, when to listen and when to protect the room.</p></div>
       </section>
 
       <section className="service-deck" id="services" aria-labelledby="service-title">
@@ -85,6 +85,10 @@ export default function Home() {
         <div className="role-table" role="list" aria-label="Selected Web3 roles">
           <div className="role-head"><span>PROJECT</span><span>ROLE</span><span>SCOPE</span></div>
           {roles.map((item, index) => <article key={item.project} role="listitem"><div><small>0{index + 1}</small><strong>{item.project}</strong></div><p>{item.role}</p><p>{item.scope}</p></article>)}
+        </div>
+        <div className="project-notes" aria-label="Selected project contributions">
+          <article><p>CYFURCOIN / COMMUNITY MANAGEMENT & GROWTH</p><h3>KEEPING THE ROOM ACTIVE.</h3><p>Telegram management, community activities, contests, announcements, education and social support designed to encourage participation and retention.</p></article>
+          <article><p>RALLY25 / COMMUNITY MANAGER</p><h3>BUILDING FROM EARLY.</h3><p>Member onboarding, daily support, project updates and discussion management—from an early group of 8 to a community of 100+ members.</p></article>
         </div>
       </section>
 
