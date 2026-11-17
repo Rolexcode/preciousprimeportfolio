@@ -122,13 +122,13 @@ export default function Home() {
             ))}
           </div>
         </details>
-        <details className="proof-more rate-card-reveal">
-          <summary className="proof-more-trigger focus-ring">IMPRESSED? VIEW THE RATE CARD <span aria-hidden="true">+</span></summary>
+        <div className="rate-card-showcase" aria-labelledby="rate-card-title">
+          <div className="rate-card-heading"><p>RATE CARD / 006</p><h3 id="rate-card-title">READY TO<br /><span>WORK?</span></h3><p>Packages for content, community management and sustainable growth. Custom scopes are available.</p></div>
           <div className="rate-card-inline">
             <figure className="proof-card"><Image src="/prime-web3-rate-card.png" alt="Prime Web3 rate card showing content writing, community management and growth strategy packages" width={1024} height={1536} /><figcaption><span>RATE CARD</span>PACKAGES & CUSTOM SCOPES</figcaption></figure>
             <a className="rate-card-contact focus-ring" href="https://t.me/preciousprime07" target="_blank" rel="noreferrer">ASK ABOUT A PACKAGE ↗</a>
           </div>
-        </details>
+        </div>
       </section>
 
       <section className="final-call" aria-labelledby="contact-title">
