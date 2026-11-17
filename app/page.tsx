@@ -29,11 +29,11 @@ const moreProof = [
   ["/proof-launch.jpg", "Launch administration and growth planning", "Launch support / 06"],
 ];
 
-const payments = [
+/* const payments = [
   ["/receipt-usdc.jpg", "USDC payment receipt", "USDC / Payment 01"],
   ["/receipt-sol.jpg", "SOL payment receipt", "SOL / Payment 02"],
   ["/receipt-usdt.jpg", "USDT payment receipts", "USDT / Payment 03"],
-];
+]; */
 
 export default function Home() {
   return (
@@ -103,6 +103,7 @@ export default function Home() {
           ))}
         </div>
 
+        {/*
         <div className="payment-proof" aria-labelledby="payment-title">
           <div className="payment-proof-heading"><p>PAYMENT PROOF / 005</p><h3 id="payment-title">PAID IN<br /><span>CRYPTO.</span></h3><p>Selected on-chain and stablecoin payment records from completed Web3 work.</p></div>
           <div className="payment-grid">
@@ -114,6 +115,7 @@ export default function Home() {
             ))}
           </div>
         </div>
+        */}
 
         <details className="proof-more">
           <summary className="proof-more-trigger focus-ring">SEE DEV REVIEWS <span aria-hidden="true">+</span></summary>
