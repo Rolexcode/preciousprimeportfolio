@@ -92,6 +92,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Entire proof and rate-card screenshot section hidden; source preserved.
       <section className="proof-section">
         {/*
         <div className="proof-heading"><p>PROOF OF WORK / 004</p><h2 id="proof-title">THE WORK<br /><span>SPEAKS.</span></h2><p>Real conversations. Real appointments. Real trust earned across ambassador, community, operations and launch roles.</p></div>
@@ -142,6 +143,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
 
       <section className="final-call" aria-labelledby="contact-title">
         <p>YOUR COMMUNITY SHOULD FEEL ALIVE.</p><h2 id="contact-title">LET&apos;S MAKE<br />SOME <span>NOISE.</span></h2><a className="contact-email focus-ring" href="mailto:preciousafolayan6@gmail.com">preciousafolayan6@gmail.com</a>
