@@ -17,11 +17,11 @@ const services = [
   ["07", "AMBASSADOR & VISUAL SUPPORT", "Project advocacy and simple visual content that improve awareness and visibility."],
 ];
 
-const featuredProof = [
+/* const featuredProof = [
   ["/proof-ambassador.jpg", "Ambassador appointment confirmed", "Ambassadorship / 01"],
   ["/proof-partner.jpg", "Web3 partnership confirmed", "Partnership / 02"],
   ["/proof-admin.jpg", "Community administrator appointment", "Community admin / 03"],
-];
+]; */
 
 const moreProof = [
   ["/proof-pm.jpg", "Online project manager invitation", "Project management / 04"],
@@ -96,6 +96,7 @@ export default function Home() {
         {/*
         <div className="proof-heading"><p>PROOF OF WORK / 004</p><h2 id="proof-title">THE WORK<br /><span>SPEAKS.</span></h2><p>Real conversations. Real appointments. Real trust earned across ambassador, community, operations and launch roles.</p></div>
         */}
+        {/* Main proof screenshots hidden; source preserved.
         <div className="proof-grid">
           {featuredProof.map(([src, alt, caption], index) => (
             <figure className={`proof-card proof-card-${index + 1}`} key={src}>
@@ -104,6 +105,7 @@ export default function Home() {
             </figure>
           ))}
         </div>
+        */}
 
         {/*
         <div className="payment-proof" aria-labelledby="payment-title">
