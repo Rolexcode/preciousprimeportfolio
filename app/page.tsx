@@ -117,6 +117,7 @@ export default function Home() {
         </div>
         */}
 
+        {/*
         <details className="proof-more">
           <summary className="proof-more-trigger focus-ring">SEE DEV REVIEWS <span aria-hidden="true">+</span></summary>
           <div className="proof-grid proof-grid-more">
@@ -128,6 +129,7 @@ export default function Home() {
             ))}
           </div>
         </details>
+        */}
         <div className="rate-card-showcase" aria-labelledby="rate-card-title">
           <div className="rate-card-heading"><p>RATE CARD / 006</p><h3 id="rate-card-title">READY TO<br /><span>WORK?</span></h3><p>Packages for content, community management and sustainable growth. Custom scopes are available.</p></div>
           <div className="rate-card-inline">
