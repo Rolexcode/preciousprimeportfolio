@@ -92,8 +92,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="proof-section" aria-labelledby="proof-title">
+      <section className="proof-section">
+        {/*
         <div className="proof-heading"><p>PROOF OF WORK / 004</p><h2 id="proof-title">THE WORK<br /><span>SPEAKS.</span></h2><p>Real conversations. Real appointments. Real trust earned across ambassador, community, operations and launch roles.</p></div>
+        */}
         <div className="proof-grid">
           {featuredProof.map(([src, alt, caption], index) => (
             <figure className={`proof-card proof-card-${index + 1}`} key={src}>
